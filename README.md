@@ -34,3 +34,18 @@ P = {
 },  
 S = <Outline>
 ```
+
+# Problem 2
+*Write grammar G2 that repairs any ambiguity problems.  (If no ambiguity problems, just say G2 = G1.)*  
+
+**G2 = G1**
+
+# Problem 3
+*Write the grammar G3 that repairs any left-recursion problems.  (If none, say G3 = G2.)*  
+
+**G3 = G2**
+
+# Problem 4
+*Write the grammar G4 that repairs any left-prefix problems. (If none, say G4 = G3.)*  
+
+**G4 = G3**
