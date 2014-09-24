@@ -4,11 +4,12 @@ OutlineParser
 A recursive descent parser to parse an outline numbering grammar.
 
 ```
-Outline	numbering	follows	a	certain	“grammatical”	pattern.
-I.	Roman	numerals	at	highest	level
-  A.	Capital	letters	at	next	level
-    1.	Arabic	numbers	at next	level
-      a.	Lowercase	letters	at	next	level
+Outline numbering follows a certain “grammatical” pattern.
+I. Roman numerals at highest level
+  A. Capital letters at next level
+    1. Arabic numbers at next level
+      a. Lowercase letters at next level
+
       
 Thus, we can take an outline section reference such as II.B.2.b and verify if it follows the grammatical structure (it does). However, the following references do not: IIB2b (no dots), B.2.II.b (wrong order), B.2.a (missing leading section). Note that II.B is considered legal, that is trailing sections can be omitted.
 
