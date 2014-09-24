@@ -10,7 +10,6 @@ I. Roman numerals at highest level
     1. Arabic numbers at next level
       a. Lowercase letters at next level
 
-      
 Thus, we can take an outline section reference such as II.B.2.b and verify if it follows the grammatical structure (it does). However, the following references do not: IIB2b (no dots), B.2.II.b (wrong order), B.2.a (missing leading section). Note that II.B is considered legal, that is trailing sections can be omitted.
 
 Write the grammar productions needed to recognize/generate an outline section reference such as the ones above. You can limit your choices at each level to 4 (i.e., I,II,III,IV,A,B,C,D, etc.).
@@ -22,12 +21,13 @@ Write the grammar productions needed to recognize/generate an outline section re
 ```
 G = (T, N, P, S) where  
 T = {I, II, III, IV, A, B, C, D, 1, 2, 3, 4, a, b, c, d, .},  
-N = {<Outline>, <RomanNumeral>, <CapitalLetter>, <ArabicNumeral>, <LowercaseLetter>},  
+N = {<Outline>, <RomanNumeral>, <CapitalLetter>, <ArabicNumeral>, <LowercaseLetter>, <Level1>, <Level2>, <Level3>, <Level4>},  
 P = {  
-  <Outline> ::= <RomanNumeral>  
-  <Outline> ::= <RomanNumeral>.<CapitalLetter>  
-  <Outline> ::= <RomanNumeral>.<CapitalLetter>.<ArabicNumeral>  
-  <Outline> ::= <RomanNumeral>.<CapitalLetter>.<ArabicNumeral>.<LowercaseLetter>  
+  <Outline> ::= <Level1>
+  <Level1> ::= <RomanNumeral><Level2>
+  <Level2> ::= .<CaptialLetter><Level3> | λ  
+  <Level3> ::= .<ArabicNumeral><Level4> | λ  
+  <Level4> ::= .<LowercaseLetter> | λ  
   <RomanNumeral> ::= I | II | III | IV  
   <CapitalLetter> ::= A | B | C | D  
   <ArabicNumeral> ::= 1 | 2 | 3 | 4  
