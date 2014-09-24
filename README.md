@@ -50,3 +50,7 @@ S = <Outline>
 *Write the grammar G4 that repairs any left-prefix problems. (If none, say G4 = G3.)*  
 
 **G4 = G3**
+
+# Problem 5
+*Write a recursive descent parser to parse G4.*  
+
