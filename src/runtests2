@@ -1,0 +1,22 @@
+#!/bin/sh
+echo "all these results should be YAY"
+java NathanphParser I
+java NathanphParser IX
+java NathanphParser I.A
+java NathanphParser I.C
+java NathanphParser III.A.2
+java NathanphParser V.B.5
+java NathanphParser I.A.2
+java NathanphParser IV.A.2.a
+java NathanphParser IV.A.2.e
+echo "____________________________"
+echo "all these results should be errors"
+java NathanphParser Q
+java NathanphParser VV
+java NathanphParser V.1
+java NathanphParser V.A.a
+java NathanphParser V.A.A
+java NathanphParser V.A.1.1
+
+
+

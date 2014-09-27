@@ -1,0 +1,22 @@
+#!/bin/sh
+echo "all these results should be YAY"
+java FenwicksParser I
+java FenwicksParser IX
+java FenwicksParser I.A
+java FenwicksParser I.C
+java FenwicksParser III.A.2
+java FenwicksParser V.B.5
+java FenwicksParser I.A.2
+java FenwicksParser IV.A.2.a
+java FenwicksParser IV.A.2.e
+echo "____________________________"
+echo "all these results should be errors"
+java FenwicksParser Q
+java FenwicksParser VV
+java FenwicksParser V.1
+java FenwicksParser V.A.a
+java FenwicksParser V.A.A
+java FenwicksParser V.A.1.1
+
+
+
