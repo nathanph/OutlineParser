@@ -31,7 +31,7 @@ P = {
   <RomanNumeral> ::= I | II | III | IV  
   <CapitalLetter> ::= A | B | C | D  
   <ArabicNumeral> ::= 1 | 2 | 3 | 4  
-  <LowercaseLetter> := a | b | c | d  
+  <LowercaseLetter> ::= a | b | c | d  
 },  
 S = <Outline>
 ```
